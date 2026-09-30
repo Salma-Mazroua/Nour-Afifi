@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nour Afifi | Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700&family=Nunito:wght@400;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+  <a href="#about">About</a><a href="#skills">Skills</a><a href="#certs">Certifications</a><a href="#exp">Experience</a><a href="#contact">Contact</a>
+</nav>
+<main>
+  <div class="hero">
+    <div class="av"><img src="pic.jpeg"></div>
+    <h1>Hi, I'm Nour Afifi!</h1>
+    <p>Industrial Engineering student · Web developer · Process improver</p>
+  </div>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>I'm an Industrial Engineering student at the Egypt-Japan University of Science and Technology (GPA 3.3, graduating fall 2028). I love improving how things work, whether it's a factory line, a coffee shop, or a website. I've worked in manufacturing, sales, and business management, and I build web projects on the side.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div id="skillList"></div>
+  </section>
+
+  <section id="certs">
+    <h2>Certifications &amp; Awards</h2>
+    <div id="certsList"></div>
+    <button class="btn add" data-add="certs">➕ Add certification</button>
+  </section>
+
+  <section id="exp">
+    <h2>Experience</h2>
+    <div id="expList"></div>
+    <button class="btn add" data-add="exp">➕ Add experience</button>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card contact">
+      <p>📧 <a href="mailto:nour.120230216@ejust.edu.eg">nour.120230216@ejust.edu.eg</a></p>
+      <p>📞 <a href="tel:+201021408555">(+20) 1021408555</a></p>
+      <p>📍 Shebin Elkom, Elmenoufia, Egypt</p>
+    </div>
+  </section>
+
+  <footer>Built with ⚙️, ☕ and curiosity <button id="lock" title="Admin" aria-label="Admin login">🔒</button></footer>
+</main>
+
+<div id="adminBar">
+  <span>Admin mode</span>
+  <button class="btn" id="copy">📋 Copy data</button>
+  <button class="btn main" id="logout">Log out</button>
+</div>
+
+<dialog id="login">
+  <h3>Admin login</h3>
+  <label>Password<input type="password" id="pw" autocomplete="off"></label>
+  <p id="err" class="meta"></p>
+  <div class="row"><button class="btn" id="loginCancel">Cancel</button><button class="btn main" id="loginOk">Log in</button></div>
+</dialog>
+
+<dialog id="dlg">
+  <h3 id="dTitle"></h3>
+  <div id="fields"></div>
+  <div class="row"><button class="btn" id="cancel">Cancel</button><button class="btn main" id="save">Save</button></div>
+</dialog>
+
+<script src="app.js"></script>
+</body>
+</html>
